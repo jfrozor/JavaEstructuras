@@ -48,7 +48,7 @@ do {
                     {
                         case 1:
                             System.out.println("Usted acaba de votar por: "+candidato1);
-                            if(voto==1){voto1++;hv1=voto1;}
+                            if(voto==1){voto1++;hv1++;}
                             System.out.println("indique el medio por donde lo conoció");
                             System.out.println("Seleccione 1->radio, 2-> internet, 3-> Tv");
                             medio=teclado.nextInt();
@@ -80,7 +80,7 @@ do {
 
                         case 2:
                             System.out.println("Usted acaba de votar por: "+candidato2);
-                            if(voto==2){voto2++;hv2=voto2;}
+                            if(voto==2){voto2++;hv2++;}
                             System.out.println("indique el medio por donde lo conoció");
                             System.out.println("Seleccione 1->radio, 2-> internet, 3-> Tv");
                             medio=teclado.nextInt();
@@ -105,7 +105,7 @@ do {
                             break;
                         case 3:
                             System.out.println("Usted acaba de votar por: "+candidato3);
-                            if(voto==3){voto3++;hv1=voto3;}
+                            if(voto==3){voto3++;hv3++;}
                             System.out.println("indique el medio por donde lo conoció");
                             System.out.println("Seleccione 1->radio, 2-> internet, -> Tv");
                             medio=teclado.nextInt();
@@ -171,11 +171,11 @@ do {
                     break;
 
                 case 6:
-                    pv1=(hv1/vtotal)*100;
+                    pv1=(hv1/vtotal);
                     System.out.println("Porcentaje de participación "+candidato1+" es "+pv1);
-                    pv2=(hv2/vtotal)*100;
+                    pv2=(hv2/vtotal);
                     System.out.println("Porcentaje de participación "+candidato2+" es "+pv2);
-                    pv3=(hv3/vtotal)*100;
+                    pv3=(hv3/vtotal);
                     System.out.println("Porcentaje de participación "+candidato3+" es "+pv3);
                     break;
 
